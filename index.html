@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<!-- keep the line below for OpenProcessing compatibility -->
+	<script src="https://openprocessing.org/openprocessing_sketch.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/p5.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.0/lib/addons/p5.sound.min.js"></script>
+	<script src="star.js"></script>
+	<script src="mySketch.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>   
+	<h2>Star Position Chart</h2>
+	Rotation? <input type="checkbox" id="rotationCheck" onclick="rotationCheckFunction()">
+	Rotation Speed: <input type="range" min="1" max="50" value="25" id="rotationSlider" oninput="rotationSliderFunction()">
+	<br>
+	Show Color? <input type="checkbox" id="colorCheck" onclick="colorCheckFunction()">
+	<br>
+	Minimum Magnitude: <input type="range" min="-2" max="6" value="6" id="magSlider" oninput="magSliderFunction()">
+	<br>
+	Size Scaling: <input type="range" min="1" max="10" value="2" id="scaleSlider" oninput="scaleSliderFunction()">
+</body>
+
+</html>
